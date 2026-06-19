@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "socket_path": "/run/jfpd.sock",
+  "request": {
+    "required": ["id", "method", "params", "session_token"],
+    "types": {
+      "id": "string",
+      "method": "string",
+      "params": "object",
+      "session_token": "string"
+    }
+  },
+  "response": {
+    "required": ["id", "ok", "result", "error", "server_ts"],
+    "types": {
+      "id": "string|null",
+      "ok": "boolean",
+      "result": "object|null",
+      "error": "object|null",
+      "server_ts": "iso8601_utc"
+    }
+  },
+  "methods": [
+    "health.ping",
+    "metrics.get_current",
+    "events.get_recent",
+    "policy.set_profile",
+    "benchmark.unlock",
+    "benchmark.start",
+    "benchmark.stop",
+    "panic.stop"
+  ],
+  "error_codes": [
+    "E_AUTH",
+    "E_RATE_LIMIT",
+    "E_INVALID_METHOD",
+    "E_INVALID_PARAMS",
+    "E_POLICY_DENY",
+    "E_COOLDOWN_ACTIVE",
+    "E_RUNTIME"
+  ]
+}

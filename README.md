@@ -1,3 +1,11 @@
+[![Project Status: In Development](https://img.shields.io/badge/Project%20Status-In%20Development-orange)]()
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12+-blue)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)]()
+[![Tests](https://img.shields.io/badge/Tests-46%20%F0%9F%94%9A%2098%25-success)]()
+
+---
+
+
 # JFP PARADOX
 
 **Autonomous Network Governance System**
